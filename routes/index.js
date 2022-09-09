@@ -1,3 +1,4 @@
+const { response } = require('express');
 const express = require('express');
 const pool = require('../utils/database');
 const router = express.Router();
@@ -22,5 +23,12 @@ router.get('/', async function(req, res, next) {
         next();
     }
 });
+
+router.get('/test', function(request, response) {
+    response.render('test.njk', {
+        title: 'Hejsan',
+        text: 'Hej hopp'
+    });
+})
 
 module.exports = router;

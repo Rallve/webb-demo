@@ -145,7 +145,7 @@ select {
 body {
   color: var(--color-foreground);
   background-color: var(--color-background);
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Smooch', cursive;
   font-size: var(--step-0);
   line-height: 1.5;
   display: flex;
